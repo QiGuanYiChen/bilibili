@@ -1,0 +1,25 @@
+body {
+    background-color: #f4f4f4;
+    font: 1rem/1.5 'Microsoft YaHei', 'Droid Sans Fallback', SimHei, Arial, Helvetica, tahoma, sans-serif;
+    max-height: 100%;
+}
+
+.mainHeader {
+    position: relative;
+    width: 100%;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #fff;
+    background-color: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #e7e7e7;
+    padding-right: 0.5rem;
+}
+

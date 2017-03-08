@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>哔哩哔哩移动版-( ゜- ゜)つロ干杯~</title>
+    <meta name="description"
+          content="bilibili是国内知名的在线视频弹幕网站，拥有最棒的ACG氛围，哔哩哔哩内容丰富多元，涵盖动漫、电影、二次元舞蹈视频、在线音乐、娱乐时尚、科技生活、鬼畜视频等。下载客户端还可离线下载电影、动漫。">
+    <meta name="keywords" content="Bilibili,哔哩哔哩动画,动漫,电影,在线看动漫,在线电影">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <script src="./libs/js/jquery-3.1.1.min.js"></script>
+    <script src="./libs/js/fastclick.js"></script>
+    <script src="./libs/js/swiper-3.4.1.jquery.min.js"></script>
+    <!-- angular 文件-->
+    <script src="./libs/js/angular.min.js"></script>
+    <script src="./libs/js/angular-route.js"></script>
+    <script src="./libs/js/angular-css.min.js"></script>
+    <!-- 该文件与 reset.css 二选一 -->
+    <link rel="stylesheet" href="./libs/css/flexible.css">
+    <link rel="stylesheet" href="./libs/css/swiper.min.css">
+    <!-- index 的 css 文件 -->
+    <link rel="stylesheet" href="./public/css/index.css">
+</head>
+<body>
+<header class="mainHeader">
+    <nav class="nav">
+        <a href="#home">首页</a>
+        <a href="#channel">频道</a>
+        <a href="#channel">直播</a>
+        <a href="#channel">排行</a>
+        <a href="#channel">我的</a>
+    </nav>
+</header>
+<!-- 视口 div -->
+<div ng-view></div>
+<script src="./public/js/index.js"></script>
+</body>
+</html>
