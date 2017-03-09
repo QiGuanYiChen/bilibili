@@ -3,13 +3,13 @@ let app = angular.module("app", ["ngRoute", "angularCSS"]);
 app.config(["$routeProvider", function ($routeProvider) {
     // when(a,b)  a. 锚点路径  b. object
     $routeProvider
-        .when("/home", {
+        .when("#/home", {
             template: "<h1>这是home页面</h1>"
             // templateUrl:
             // css:
             // controller:
         })
-        .when("/channel", {
+        .when("#/channel", {
             template: "<h1>channel</h1>"
             // html 路径
             // templateUrl:
