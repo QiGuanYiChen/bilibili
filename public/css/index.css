@@ -4,6 +4,18 @@ body {
     max-height: 100%;
 }
 
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .mainHeader {
     position: relative;
     width: 100%;
@@ -12,7 +24,41 @@ body {
 .headerTop {
     height: 40px;
     border-bottom: 1px solid #e7e7e7;
-    background: #fff url("../img/logo.png");
+    background: #fff;
+}
+
+.headerTop a:nth-child(1) img {
+    margin-left: 18px;
+    margin-top: 6px;
+    width: 63px;
+    height: 28px;
+}
+
+.headerTop a:nth-child(2), .headerTop a:nth-child(3) {
+    float: right;
+    width: 44px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTop a:nth-child(2) i, .headerTop a:nth-child(3) i {
+    background: url("../img/ui.png") no-repeat;
+    background-size: 274px 228px;
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.headerTop a:nth-child(2) i {
+    background-position: -22px -206px;
+}
+
+.headerTop a:nth-child(3) i {
+    background-position: 0 -206px;
 }
 
 .nav {
@@ -31,4 +77,137 @@ body {
     flex: 1;
     text-align: center;
     color: #444;
+    box-sizing: border-box;
+}
+
+.searchView {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.searchViewBg {
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.searchBar {
+    height: 40px;
+    width: 100%;
+}
+
+.searchBarWarp {
+    height: 100%;
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 0 70px 0 12px;
+    box-sizing: border-box;
+}
+
+.searchBarWarp input {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    top: 5px;
+    font-size: 14px;
+    color: #999;
+    padding: 0 0 0 36px;
+}
+
+.searchBarWarp i:nth-child(2), .searchBarWarp i:nth-child(3) {
+    position: absolute;
+    background-image: url("../img/ui.png");
+    background-size: 274px 228px;
+    display: block;
+
+}
+
+.searchBarWarp i:nth-child(2) {
+    top: 9px;
+    left: 19px;
+    background-position: 0 -206px;
+    width: 22px;
+    height: 22px;
+}
+
+.searchBarWarp i:nth-child(3) {
+    background-position: -144px -206px;
+    width: 16px;
+    height: 16px;
+    right: 80px;
+    top: 12px;
+}
+
+.searchBarWarp a {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.searchWrapper {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.searchWrapperTitle {
+    height: 1px;
+    background-color: #ccc;
+    margin: 23px 0 24px 0;
+}
+
+.searchWrapperTitle span {
+    color: #888;
+    font-size: 13px;
+    padding: 0 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    top: -13px;
+    left: 35%;
+}
+
+.hotContent {
+    max-height: 73px;
+    overflow: hidden;
+}
+
+.hotContent a {
+    float: left;
+    color: #444;
+    font-size: 14px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    margin: 0 12px 12px 0;
 }

@@ -22,10 +22,18 @@
     <!-- index 的 css 文件 -->
     <link rel="stylesheet" href="./public/css/index.css">
 </head>
-<body>
+<body ng-controller="indexCtrl">
 <!-- 公共头部 -->
 <header class="mainHeader">
-    <div class="headerTop"></div>
+    <!-- 最顶部 -->
+    <div class="headerTop">
+        <a href="./index.html">
+            <img src="./public/img/logo.png">
+        </a>
+        <a href="http://m.bilibili.com/history.html"><i></i></a>
+        <a href="javascript:void(0);"><i></i></a>
+    </div>
+    <!-- 导航栏 -->
     <nav class="nav">
         <a href="#/home">首页</a>
         <a href="#/channel">频道</a>
@@ -34,6 +42,33 @@
         <a href="#/space">我的</a>
     </nav>
 </header>
+<!-- 搜索框 -->
+<div class="searchView">
+    <div class="searchViewBg"></div>
+    <div class="searchBar">
+        <div class="searchBarWarp">
+            <form action="https://m.bilibili.com/search.html" method="GET" id="search_form">
+                <input name="keyword" type="text" placeholder="搜索视频、番剧、up主或AV号" ng-model="text">
+            </form>
+            <i></i>
+            <i></i>
+            <a href="javascript:void(0);">取消</a>
+        </div>
+    </div>
+    <div class="searchWrapper">
+        <h1 class="searchWrapperTitle"><span>热门搜索</span></h1>
+        <div class="hotContent">
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+            <a href="">人渣的本怨</a>
+        </div>
+    </div>
+</div>
 <!-- 视口 div -->
 <div ng-view></div>
 <script src="./public/js/index.js"></script>
