@@ -1,0 +1,22 @@
+<div class="live-main">
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="x in data">
+                    <a href="{{x.link}}">
+                        <img ng-src="{{x.img}}">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <show-live></show-live>
+    <script>
+        $(function () {
+            let $loading = $(".loading");
+            $loading.css("height", $loading[0].offsetWidth * 0.49 * 0.625);
+        });
+    </script>
+</div>

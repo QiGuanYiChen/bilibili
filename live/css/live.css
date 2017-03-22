@@ -1,0 +1,140 @@
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.swiper-pagination {
+    text-align: right;
+}
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fb7299;
+}
+
+.banner {
+    margin-bottom: 12px;
+}
+
+.room-list-container {
+    padding: 0 12px;
+    margin-bottom: 12px;
+    background-color: #fff;
+}
+
+.title {
+    padding: 12px 0;
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    color: #181818;
+}
+
+.title-left {
+    float: left;
+    height: 100%;
+}
+
+.title-right {
+    float: right;
+}
+
+.title-left img {
+    height: 100%;
+    width: auto;
+    vertical-align: top;
+}
+
+.title-right span {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkyRTUxRjYyM0MxNTExRTY4RjJFQ0YzNTlFRTFBMTdFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkyRTUxRjYzM0MxNTExRTY4RjJFQ0YzNTlFRTFBMTdFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTJFNTFGNjAzQzE1MTFFNjhGMkVDRjM1OUVFMUExN0UiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTJFNTFGNjEzQzE1MTFFNjhGMkVDRjM1OUVFMUExN0UiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7c7GU4AAACjklEQVR42syYz0tUURTH31x/bVKhf0A0CEUXkRtDRaysTNcpSVsRHHVTpqBoUpCCUCkibkPRoF2OOKULf6CLUTcpZq2yf6CmFur443vgvOn5mHHufffO4IEPjvLueR/nvnPfPdcXCoUsxcgH90EFKAR5IAcI8Af8BLtgFQTBnkrydMnr0kAD8IMy4Itz3VXmBmjkv22AN2AaRBLdSEjI3AFfwSS4dYFMvCgF78E2uKsjlAVGwBeeGt24Dj5zzixVoVwe7LfMh59z58oK0YULoNJKXlDuxVhSbqFM8InnPdlxE8y6p88t9JbLWSaoxJfAkYZUOXgXT4iqqUUhGa1FVVw5fzWkmvne54RonRlVTLTPP+lbegj+aUiNskNU6JGH0p7hFZpiGdRqSBXywhsV8nuc/wDINiTVagsV8Ars9aGcMyRFDtcEP5w+zUoxIUUO9wQn1A1TUuXC0HvKlFSR4P2MdUmk8oRjsEmpgL2usBStUycSY68IyT2RanwEx47fayXvI+iisGGZp7xDtKMTdEmODQvHK8BEdINhl8ygwvhfJLRjSKYXvNaQodgR3B3oxgvwUlOGYoWE5jVlXoF+AzIUQRL6AdY9JhgCPYZkyOG7XYojHhLQ7vK5IRl7TxRdGz5wt6kSfY7PzzRlvvH+KioU8bAnegwyuLqGDLRGEfeemlqfcYUkY+AQDGjKTHAzGrPr6KDSs1IXtOS0X9QG0X9cDzZTILMF6sBBos71N7jNb+lkBeWu5ntJ9fZ0YY2H1ki2vGtiySQ6/aCvso0bwV0DInss0uaeJtXzIaq+EtAE1sCpoggdWD0Bxc5qiheyJ2i02Zpi6EjvgXX+SC/b+n+kt88LHT0nykd6ZwIMAD99jKUhR5YjAAAAAElFTkSuQmCC) 100% no-repeat;
+    background-size: contain;
+    padding-right: 24px;
+    color: #919799;
+    font-size: 12px;
+}
+
+.block {
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.block a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+.block a:nth-child(even) {
+    margin-left: 2%;
+}
+
+.loading {
+    background: url("../../public/img/img_loading.png") center center no-repeat;
+    background-size: 72px 70px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.loading:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.loading img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.loading span:nth-child(2) {
+    width: 105px;
+    height: 12px;
+    line-height: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: .32rem;
+    margin: 0 0 7px 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 110;
+    color: #fff;
+}
+
+.loading span:nth-child(3) {
+    width: 33px;
+    height: 10px;
+    line-height: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    margin-bottom: 7px;
+    z-index: 110;
+    background: url("../../public/img/eye.png") 0 0 no-repeat;
+    background-size: 9.6px 8.6px;
+    padding-left: 12px;
+    color: #fff;
+}

@@ -12,9 +12,10 @@
     <script src="./libs/js/jquery-3.1.1.min.js"></script>
     <script src="./libs/js/fastclick.js"></script>
     <script src="./libs/js/swiper-3.4.1.jquery.min.js"></script>
+    <script src="./libs/js/jquery.lazyload.min.js"></script>
     <!-- angular 文件-->
     <script src="./libs/js/angular.min.js"></script>
-    <script src="./libs/js/angular-route.js"></script>
+    <script src="./libs/js/angular-ui-route.min.js"></script>
     <script src="./libs/js/angular-css.min.js"></script>
     <!-- 该文件与 reset.css 二选一 -->
     <link rel="stylesheet" href="./libs/css/flexible.css">
@@ -23,11 +24,12 @@
     <link rel="stylesheet" href="./public/css/index.css">
 </head>
 <body ng-controller="indexCtrl">
+
 <!-- 公共头部 -->
 <header class="mainHeader">
     <!-- 最顶部 -->
     <div class="headerTop">
-        <a href="./index.html">
+        <a href="http://gaoyu.applinzi.com">
             <img src="./public/img/logo.png">
         </a>
         <a href="http://m.bilibili.com/history.html"><i></i></a>
@@ -35,43 +37,90 @@
     </div>
     <!-- 导航栏 -->
     <nav class="nav">
-        <a href="#/home">首页</a>
-        <a href="#/channel">频道</a>
-        <a href="#/live">直播</a>
-        <a href="#/ranking">排行</a>
-        <a href="#/space">我的</a>
+        <a ui-sref-active="active" ui-sref="home">首页</a>
+        <a ui-sref-active="active" ui-sref="channel">频道</a>
+        <a ui-sref-active="active" ui-sref="live">直播</a>
+        <a ui-sref-active="active" ui-sref="ranking">排行</a>
+        <a ui-sref-active="active" ui-sref="space">我的</a>
     </nav>
 </header>
 <!-- 搜索框 -->
 <div class="searchView">
-    <div class="searchViewBg"></div>
+    <!-- 搜索栏 -->
     <div class="searchBar">
         <div class="searchBarWarp">
             <form action="https://m.bilibili.com/search.html" method="GET" id="search_form">
-                <input name="keyword" type="text" placeholder="搜索视频、番剧、up主或AV号" ng-model="text">
+                <input name="keyword" type="text" placeholder="搜索视频、番剧、up主或AV号" class="searchInput">
             </form>
             <i></i>
             <i></i>
             <a href="javascript:void(0);">取消</a>
         </div>
     </div>
+    <!-- 热门搜索 & 历史搜索 -->
     <div class="searchWrapper">
         <h1 class="searchWrapperTitle"><span>热门搜索</span></h1>
-        <div class="hotContent">
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
-            <a href="">人渣的本怨</a>
+        <div class="hotContent clearfix">
+            <a ng-href="http://m.bilibili.com/search.html?keyword={{a.keyword}}" ng-repeat="a in data track by $index"
+               ng-click="addStorage(a)">
+                {{a.keyword}}
+            </a>
+        </div>
+        <h1 class="historyWrapperTitle"><span>历史搜索</span></h1>
+        <div class="historyContent clearfix">
+            <a ng-repeat="i in memory track by $index"
+               ng-href="http://m.bilibili.com/search.html?keyword={{JSONParse(i).keyword}}">
+                <i></i>
+                <span>{{JSONParse(i).keyword}}</span>
+                <i></i>
+            </a>
         </div>
     </div>
+    <div class="searchResult"></div>
 </div>
 <!-- 视口 div -->
-<div ng-view></div>
+<div id="view-content" ui-view></div>
+
+<!-- 公共底部 footer -->
+<footer>
+    <p class="clearfix">
+        <a id="change_to_computer" href="javascript:void(0)" class="bottom-btn">
+            <i class="icons icons-computer"></i>
+            电脑版
+        </a>
+        <a id="link_to_app" href="javascript:void(0);" class="bottom-btn">
+            <i class="icons icons-app"></i>
+            客户端
+        </a>
+        <a id="back_to_top" href="javascript:void(0);" class="bottom-btn">
+            <i class="icons icons-top"></i>
+            返回顶部
+        </a>
+    </p>
+    <p>哔哩哔哩 沪ICP备13002172号-3</p>
+    <p>信息网络传播视听节目许可证：<span>0910417</span></p>
+</footer>
+
+<!--悬浮广告栏-->
+<div id="b_app_link" class="b-app-dl-wrp">
+    <div class="b-app-dl" title="Bilibili客户端下载">
+        <div class="app-logo"></div>
+        <div class="b-app-dl-top">上bilibili客户端</div>
+        <div class="b-app-dl-bottom">高清视频 离线观看 新番电影一览无余</div>
+        <a class="dl-area" href="https://itunes.apple.com/cn/app/bi-li-bi-li-dong-hua/id736536022">
+            下载
+        </a>
+        <div class="dl-close"></div>
+    </div>
+</div>
+
+<script src="./public/directive/me-lazyload.js"></script>
+<script src="./public/directive/showModule.js"></script>
+<script src="./public/directive/showSwiper.js"></script>
+<script src="./public/directive/showRank.js"></script>
+<script src="./public/directive/showChannel.js"></script>
+<script src="./public/directive/showLive.js"></script>
 <script src="./public/js/index.js"></script>
-<script src="./home/js/home.js"></script>
+<script src="./live/js/live.js"></script>
 </body>
 </html>

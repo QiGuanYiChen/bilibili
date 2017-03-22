@@ -1,0 +1,120 @@
+.user-wrapper {
+    height: 5.625rem;
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 1.125rem;
+    margin-top: 1.0625rem;
+    margin-bottom: 1.0625rem;
+}
+.user-wrapper .user-avatar {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.user-wrapper .user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-wrapper .user-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0.75rem;
+    height: 3.75rem;
+}
+.user-wrapper .user-info p {
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.user-wrapper .user-info .user-name {
+    font-size: 16px;
+    color: #444;
+    font-weight: 700;
+}
+.user-wrapper .user-info .user-coin {
+    color: #444;
+    font-size: 12px;
+}
+.act-wrapper {
+    margin-bottom: 1.75rem;
+}
+.act-wrapper .act-tooltip, .account-wrapper .reg-tooltip {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+    padding: 0.625rem 0;
+}
+.act-wrapper .act-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 2.75rem;
+    padding: 0 1.125rem;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+.bili-icon-history-2 {
+    background-position: -65px -206px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/ui_3@2x.png);
+    background-size: 274px 228px;
+    display: block;
+}
+.act-wrapper .act-item .act-name {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 0.625rem;
+    color: #444;
+    font-size: 18px;
+    display: block;
+}
+.bili-icon-arrow {
+    background-position: -160px -206px;
+    width: 7px;
+    height: 12px;
+    background-image: url(../img/ui_3@2x.png);
+    background-size: 274px 228px;
+    display: block;
+}
+.account-wrapper .account-btn {
+    display: block;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    color: #444;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0.625rem;
+}
+.account-wrapper .account-register {
+    color: #de698c;
+    margin: 0;
+}
+.mainHeader .nav a:last-child{
+    border-bottom: 4px solid #de698c;
+}

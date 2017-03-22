@@ -1,0 +1,145 @@
+.channel-wrapper {
+    padding-top: 18px;
+}
+
+.channel-wrapper ul li {
+    float: left;
+    width: 33.33333%;
+}
+
+@media screen and (min-width: 600px) {
+    .channel-wrapper ul li {
+        float: left;
+        width: 25%;
+    }
+}
+
+.channel-wrapper ul li > a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.channel-icon {
+    margin: 0 auto 7px;
+    position: relative;
+    display: block;
+    background-image: url("../../public/img/ui_3.png");
+    background-size: 274px 228px;
+    width: 68px;
+    height: 68px;
+}
+
+.channel-name {
+    color: #212121;
+    font-size: 14px;
+    text-align: center;
+}
+
+.icon-live {
+    background-position: -137px 0;
+}
+
+.icon-fanju:after {
+    content: '92';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ccc;
+    height: 1.0625rem;
+    z-index: 1;
+    text-align: center;
+    padding: 0 0.375rem;
+    border-radius: 8px;
+}
+
+.icon-fanju {
+    background-position: -206px -137px;
+}
+
+.icon-donghua {
+    background-position: -206px 0;
+}
+
+.icon-donghua:after, .icon-music:after, .icon-dance:after, .icon-game:after, .icon-keji:after, .icon-life:after, .icon-guichu:after, .icon-yule:after, .icon-dianying:after, .icon-dianshiju:after, .icon-shishang:after {
+    content: '99+';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ccc;
+    height: 1.0625rem;
+    z-index: 1;
+    text-align: center;
+    padding: 0 0.375rem;
+    border-radius: 8px;
+}
+
+.icon-music {
+    background-position: 0 -69px;
+}
+
+.icon-dance {
+    background-position: -206px -69px;
+}
+
+.icon-game {
+    background-position: 0 -137px;
+}
+
+.icon-keji {
+    background-position: -69px 0;
+}
+
+.icon-life {
+    background-image: url("../../public/img/channel_life.png");
+    background-size: 68px 68px;
+}
+
+.icon-guichu {
+    background-position: -137px -69px;
+}
+
+.icon-yule {
+    background-image: url("../../public/img/channel_ent.png");
+    background-size: 68px 68px;
+}
+
+.icon-dianying {
+    background-position: -69px -69px;
+}
+
+.icon-dianshiju {
+    background-position: 0 0;
+}
+
+.icon-shishang {
+    background-position: -69px -137px;
+}
+
+.icon-guanggao {
+    background-image: url("../../public/img/gao.png");
+    background-size: 68px 68px;
+}
+
+.icon-guanggao:after {
+    content: '71';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ccc;
+    height: 1.0625rem;
+    z-index: 1;
+    text-align: center;
+    padding: 0 0.375rem;
+    border-radius: 8px;
+}

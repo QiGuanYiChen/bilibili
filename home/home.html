@@ -1,1 +1,141 @@
-<h1>主页home{{home}}</h1>
+<main class="home-wrapper">
+    <!-- 轮播图 -->
+    <show-swiper target="homeBanner"></show-swiper>
+    <!--热门推荐-->
+    <home-container imgleft="hot" sectionname="热门推荐" imgright="ranking" more="排行榜" section="recommend"
+                    typename="homeHot"></home-container>
+    <!-- 直播区 -->
+    <div class="home-container">
+        <a href="//m.bilibili.com/arrow.html" class="header">
+            <div class="left">
+                <span class="bilibili-index-sprite bilibili-index-live"></span>
+                <span>正在直播</span>
+            </div>
+            <div class="right">
+                <span class="bilibili-index-sprite bilibili-index-arrow"></span>
+                <span>查看更多更新</span>
+            </div>
+        </a>
+        <ul class="home-ul">
+            <li class="home-items">
+                <a href="http://live.bilibili.com/h5/49727">
+                    <div class="lazy-img">
+                        <img ng-src="//i0.hdslb.com/bfs/live/b6eb426f92567a8bf5229268251fa52656af46c1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="//i1.hdslb.com/bfs/face/62b377b76300ccfe0e16cd8a53f85bc3c0ada053.jpg"
+                                 alt="攻音大魔王酸辣粉">
+                        </div>
+                        <div class="user">
+                            <div class="name text-overflow">攻音大魔王酸辣粉</div>
+                            <div class="desp text-overflow">来自湖南的可口叔音，唱会歌咯！</div>
+                        </div>
+                        <div class="online text-overflow">869</div>
+                    </div>
+                </a>
+            </li>
+            <li class="home-items">
+                <a href="http://live.bilibili.com/h5/5279">
+                    <div class="lazy-img">
+                        <img ng-src="//i0.hdslb.com/bfs/live/a0b3b4976d5cef9a91a632222eb9df24118bb00b.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="//i0.hdslb.com/bfs/face/8c49a758216f9bd14b0046afe48a3514f44126f0.jpg" alt="宫本狗雨">
+                        </div>
+                        <div class="user">
+                            <div class="name text-overflow">宫本狗雨</div>
+                            <div class="desp text-overflow">(つД`)ノ</div>
+                        </div>
+                        <div class="online text-overflow">2.4万</div>
+                    </div>
+
+                </a>
+            </li>
+            <li class="home-items">
+                <a href="http://live.bilibili.com/h5/1029">
+                    <div class="lazy-img">
+                        <img ng-src="//i0.hdslb.com/bfs/live/7e7d2789a181a1f2de082d12be0976baa3b65a62.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="//i1.hdslb.com/bfs/face/dabaa4acebb590fa13be1b377c0614a098554ebe.jpg" alt="黑桐谷歌">
+                        </div>
+                        <div class="user">
+                            <div class="name text-overflow">黑桐谷歌</div>
+                            <div class="desp text-overflow">塞尔达传说:荒野之息</div>
+                        </div>
+                        <div class="online text-overflow">3.9万</div>
+                    </div>
+
+                </a>
+            </li>
+            <li class="home-items">
+                <a href="http://live.bilibili.com/h5/96136">
+                    <div class="lazy-img">
+                        <img ng-src="//i0.hdslb.com/bfs/live/d23f0ae4a788ce3bbf596518cded527c3b03f8c5.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="//i1.hdslb.com/bfs/face/2f2e4ea8a54bd4401dc2764733e90dacd771ce3d.jpg" alt="浅野菌子">
+                        </div>
+                        <div class="user">
+                            <div class="name text-overflow">浅野菌子</div>
+                            <div class="desp text-overflow">过期主播玩恐怖游戏QWQ</div>
+                        </div>
+                        <div class="online text-overflow">1207</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--番剧更新    没数据暂时不处理-->
+    <show ng-click="" data="">
+        <!--动画区-->
+        <home-container imgleft="douga" sectionname="动画区" imgright="arrow" more="查看更多更新" section="douga"
+                        typename="homeDing"></home-container>
+
+        <!--音乐区-->
+        <home-container imgleft="music" sectionname="音乐区" imgright="arrow" more="查看更多更新" section="music"
+                        typename="homeDing"></home-container>
+
+        <!--舞蹈区-->
+        <home-container imgleft="dance" sectionname="舞蹈区" imgright="arrow" more="查看更多更新" section="dance"
+                        typename="homeDing"></home-container>
+        <!--游戏区-->
+        <home-container imgleft="game" sectionname="游戏区" imgright="arrow" more="查看更多更新" section="game"
+                        typename="homeDing"></home-container>
+        <!--科技区-->
+        <home-container imgleft="technology" sectionname="科技区" imgright="arrow" more="查看更多更新" section="technology"
+                        typename="homeDing"></home-container>
+        <!--生活区-->
+        <home-container imgleft="life" sectionname="生活区" imgright="arrow" more="查看更多更新" section="life"
+                        typename="homeDing"></home-container>
+        <!--鬼畜区-->
+        <home-container imgleft="kichiku" sectionname="鬼畜区" imgright="arrow" more="查看更多更新" section="kichiku"
+                        typename="homeDing"></home-container>
+        <!--时尚区-->
+        <home-container imgleft="fashion" sectionname="时尚区" imgright="arrow" more="查看更多更新" section="fashion"
+                        typename="homeDing"></home-container>
+        <!--娱乐区-->
+        <home-container imgleft="ent" sectionname="娱乐区" imgright="arrow" more="查看更多更新" section="ent"
+                        typename="homeDing"></home-container>
+        <!--电视剧区-->
+        <home-container imgleft="teleplay" sectionname="电视剧区" imgright="arrow" more="查看更多更新" section="teleplay"
+                        typename="homeDing"></home-container>
+        <!--电影区-->
+        <home-container imgleft="movie" sectionname="电影区" imgright="arrow" more="查看更多更新" section="movie"
+                        typename="homeDing"></home-container>
+        <!--广告区-->
+        <home-container imgleft="ad" sectionname="广告区" imgright="arrow" more="查看更多更新" section="ad"
+                        typename="homeDing"></home-container>
+        <script type="text/javascript">
+            $(function () {
+                let width = $('.lazy-img').css('width').slice(0, -2);
+                let height = width * 0.625 + "px";
+                $('.lazy-img').css('height', height);
+                $(".ready").css("display", "none");
+            })
+        </script>
+</main>

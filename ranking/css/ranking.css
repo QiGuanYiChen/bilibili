@@ -1,0 +1,93 @@
+.rank-links {
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+.rank-links li {
+    border: none;
+    box-sizing: border-box;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    width:33.3333%;
+}
+.rank-links h3 {
+    font-size: 0.875rem;
+}
+.rank-links li a {
+    display: block;
+    padding-left: 28px;
+    color: #777;
+    font-size: 0.875rem;
+    position: relative;
+}
+.rank-links li a i.site {
+    background-position: center top;
+}
+.rank-links li a i {
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -38px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: url(../img/rank_icon.png) center no-repeat;
+    background-size: 20px;
+}
+.rank-links li .arrow {
+    display: none;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 24px;
+    height: 10px;
+    background: url(../img/tri_rank.png) no-repeat;
+    margin-left: -10px;
+}
+.rank-links li.on .arrow{
+    display: block;
+}
+
+.ranking-body {
+    padding: 0;
+    margin: 0 auto;
+    height: 2.8125rem;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+.ranking-body .roll-bar-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 2.5625rem;
+    line-height: 2.5625rem;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.ranking-body .roll-bar-in li {
+    text-align: center;
+    height: 2.8125rem;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px 16px;
+    list-style: none;
+    white-space: nowrap;
+}

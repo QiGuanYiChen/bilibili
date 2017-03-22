@@ -1,0 +1,324 @@
+@media all and (min-width: 600px) {
+    .home-wrapper .home-container .home-items {
+        width: 25%;
+    }
+}
+.mainHeader .nav a:nth-child(1){
+    border-bottom: 4px solid #de698c;
+}
+.lazy-img{
+    width:100%;
+    /*height: 62.5%;*/
+    background: url("../../public/img/img_loading.png") no-repeat center center;
+    background-size: contain;
+}
+
+.nav a:nth-child(1) {
+    border-bottom: 4px solid #de698c;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.home-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.header {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 12px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #00a1d6;
+    background: transparent;
+}
+
+.home-container * {
+    box-sizing: border-box;
+}
+
+.home-container .header .left {
+    float: left;
+    color: #444;
+    font-size: 14px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.bilibili-index-sprite {
+    background: url(../img/index@2x.png) no-repeat;
+    background-size: 30px 462px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.home-container .header .right {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+    padding-right: 25px;
+}
+
+.home-container .header .hot {
+    font-size: 13px;
+    color: #ffb30f;
+    padding: 0 0 0 25px;
+}
+
+.bilibili-index-ranking {
+    background-position: -5px -65px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-hot {
+    background-position: -5px -215px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 6px;
+}
+
+.home-items {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 24px;
+    vertical-align: top
+}
+
+.home-items a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.home-items .title {
+    width: 100%;
+    max-height: 36px;
+    line-height: 1.4;
+    overflow: hidden;
+    color: #444;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.home-items .meta {
+    display: flex;
+}
+
+.home-items .cell {
+    position: relative;
+    width: 50%;
+    font-size: 13px;
+    color: #999;
+    padding-left: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bilibili-index-play {
+    background-position: -5px -425px;
+    width: 15px;
+    height: 11px;
+    top: 50%;
+    margin-top: -6px
+}
+
+.bilibili-index-danmu {
+    background-position: -5px -446px;
+    width: 15px;
+    height: 11px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.bilibili-index-douga {
+    background-position: -5px -305px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-arrow {
+    background-position: -5px -395px;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    left: auto;
+}
+
+.bilibili-index-music {
+    background-position: -5px -95px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-dance {
+    background-position: -5px -335px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-game {
+    background-position: -5px -245px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-technology {
+    background-position: -5px -35px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-life {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px !important;
+    background-image: url(../img/index_life.png) !important;
+}
+
+.bilibili-index-kichiku {
+    background-position: -5px -185px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-fashion {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/index_fashion.png) !important;
+    background-size: contain !important;
+}
+
+.bilibili-index-ent {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px !important;
+    background-image: url(../img/index_ent.png) !important;
+}
+
+.bilibili-index-teleplay {
+    background-position: -5px -5px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-movie {
+    background-position: -5px -125px;
+    width: 20px;
+    height: 20px;
+}
+
+.bilibili-index-ad {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px !important;
+    background-image: url(../img/index_advertise.png) !important;
+}
+
+.bilibili-index-live {
+    background-position: -5px -155px;
+    width: 20px;
+    height: 20px;
+}
+
+.home-items .avatar {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    border: 2px solid #fff;
+    top: -26px;
+    left: 7px;
+    z-index: 10;
+}
+
+.home-items .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /*vertical-align: top;*/
+}
+
+.home-items .online {
+    position: absolute;
+    top: 25px;
+    width: 48px;
+    padding: 0 1px;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 6px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.home-items .user {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    padding-left: 56px;
+}
+
+.home-items .info {
+    position: relative;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.home-container .text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.home-items .desp {
+    font-size: 13px;
+    color: #999;
+    padding-top: 2px;
+}
+
+.home-items .name {
+    font-size: 13px;
+    color: #444;
+}
+
+.swiper-container {
+    margin-bottom: 12px;
+}
